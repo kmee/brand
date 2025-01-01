@@ -9,6 +9,7 @@ setuptools.setup(
     version=version,
     install_requires=[
         'odoo12-addon-account_brand',
+        'odoo12-addon-account_invoice_bank_brand',
         'odoo12-addon-account_payment_mode_brand',
         'odoo12-addon-analytic_brand',
         'odoo12-addon-brand',
