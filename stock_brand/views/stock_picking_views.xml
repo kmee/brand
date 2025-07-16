@@ -1,0 +1,13 @@
+<!-- Copiado da versão 16.0. Iniciar adaptação para Odoo 17.0. -->
+<odoo>
+    <record id="view_picking_form_brand" model="ir.ui.view">
+        <field name="name">stock.picking.form.brand</field>
+        <field name="model">stock.picking</field>
+        <field name="inherit_id" ref="stock.view_picking_form" />
+        <field name="arch" type="xml">
+            <field name="origin" position="after">
+                <field name="brand_id" attrs="{'readonly': [('state', '!=', 'draft')]}" />
+            </field>
+        </field>
+    </record>
+</odoo>
