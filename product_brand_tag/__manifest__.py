@@ -9,9 +9,8 @@
     'website': 'https://github.com/OCA/brand',
     'data': [
         'security/ir.model.access.csv',
-        'security/ir_rule.xml',
-        'views/product_brand_view.xml',
-        'views/product_brand_tag_view.xml'
+        # 'views/product_brand_view.xml',
+        # 'views/product_brand_tag_view.xml'
     ],
     'installable': True,
     'development_status': 'Beta'
