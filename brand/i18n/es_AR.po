@@ -118,6 +118,16 @@ msgid "Attachment Count"
 msgstr "Cuenta de Archivos Adjuntos"
 
 #. module: brand
+#: model:ir.model.fields,help:brand.field_res_brand__receipt_reminder_email
+msgid ""
+"Automatically send a confirmation email to the vendor X days before the "
+"expected receipt date, asking him to confirm the exact date."
+msgstr ""
+"Envía automáticamente un correo electrónico de confirmación al proveedor X "
+"días antes de la fecha prevista de recepción, pidiéndole que confirme la "
+"fecha exacta."
+
+#. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__avatar_1920
 msgid "Avatar"
 msgstr "Avatar"
@@ -215,6 +225,11 @@ msgid "Brands"
 msgstr "Marcas"
 
 #. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__buyer_id
+msgid "Buyer"
+msgstr ""
+
+#. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__channel_ids
 msgid "Channels"
 msgstr "Canales"
@@ -237,18 +252,6 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:brand.res_brand_form_view
 msgid "City"
 msgstr "Ciudad"
-
-#. module: brand
-#: model:ir.model.fields,help:brand.field_res_brand__peppol_eas
-msgid ""
-"Code used to identify the Endpoint for BIS Billing 3.0 and its derivatives.\n"
-"             List available at https://docs.peppol.eu/poacc/billing/3.0/"
-"codelist/eas/"
-msgstr ""
-"Código utilizado para identificar el Endpoint para Facturación BIS 3.0 y sus "
-"derivados.\n"
-"             Lista disponible en https://docs.peppol.eu/poacc/billing/3.0/"
-"codelist/eas/"
 
 #. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__color
@@ -387,6 +390,11 @@ msgid "Date"
 msgstr "Fecha"
 
 #. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__reminder_date_before_receipt
+msgid "Days Before Receipt"
+msgstr "Días Antes de la Recepción"
+
+#. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__days_sales_outstanding
 msgid "Days Sales Outstanding (DSO)"
 msgstr "Días de Ventas Pendientes de Cobro (DSO)"
@@ -458,11 +466,6 @@ msgid "Font awesome icon e.g. fa-tasks"
 msgstr "Icono de Font awesome ej. fa-tasks"
 
 #. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__ubl_cii_format
-msgid "Format"
-msgstr "Formato"
-
-#. module: brand
 #: model:ir.model.fields,help:brand.field_res_brand__email_formatted
 msgid "Format email address \"Name <email@domain>\""
 msgstr "Formato de dirección de correo electrónico \"Nombre <email@dominio>\""
@@ -471,6 +474,11 @@ msgstr "Formato de dirección de correo electrónico \"Nombre <email@dominio>\""
 #: model:ir.model.fields,field_description:brand.field_res_brand__email_formatted
 msgid "Formatted Email"
 msgstr "Correo Electrónico Formateado"
+
+#. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__global_location_number
+msgid "GLN"
+msgstr ""
 
 #. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__partner_latitude
@@ -483,6 +491,11 @@ msgid "Geo Longitude"
 msgstr "Geo Longitud"
 
 #. module: brand
+#: model:ir.model.fields,help:brand.field_res_brand__global_location_number
+msgid "Global Location Number"
+msgstr ""
+
+#. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__has_message
 msgid "Has Message"
 msgstr "Tiene un Mensaje"
@@ -491,11 +504,6 @@ msgstr "Tiene un Mensaje"
 #: model:ir.model.fields,field_description:brand.field_res_brand__has_unreconciled_entries
 msgid "Has Unreconciled Entries"
 msgstr "Tiene Entradas no Reconciliadas"
-
-#. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__hide_peppol_fields
-msgid "Hide Peppol Fields"
-msgstr ""
 
 #. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__id
@@ -662,6 +670,11 @@ msgid "Message for Invoice"
 msgstr "Mensaje para Factura"
 
 #. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__purchase_warn_msg
+msgid "Message for Purchase Order"
+msgstr "Mensaje para el Pedido de Compra"
+
+#. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__sale_warn_msg
 msgid "Message for Sales Order"
 msgstr "Mensaje para los Pedidos de Venta"
@@ -715,6 +728,13 @@ msgstr "Notas"
 #: model:ir.model.fields,field_description:brand.field_res_brand__message_needaction_counter
 msgid "Number of Actions"
 msgstr "Número de Acciones"
+
+#. module: brand
+#: model:ir.model.fields,help:brand.field_res_brand__reminder_date_before_receipt
+msgid "Number of days to send reminder email before the promised receipt date"
+msgstr ""
+"Número de días para enviar un correo electrónico de recordatorio antes de la "
+"fecha de recepción prometida"
 
 #. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__message_has_error_counter
@@ -792,16 +812,6 @@ msgid "Payment Tokens"
 msgstr "Tokens de Pago"
 
 #. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__peppol_endpoint
-msgid "Peppol Endpoint"
-msgstr "Endpoint de Peppol"
-
-#. module: brand
-#: model:ir.model.fields,field_description:brand.field_res_brand__peppol_eas
-msgid "Peppol e-address (EAS)"
-msgstr "Dirección Electrónica Peppol (EAS)"
-
-#. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__phone
 msgid "Phone"
 msgstr "Teléfono"
@@ -822,6 +832,21 @@ msgstr ""
 #: model:ir.model.fields,field_description:brand.field_res_brand__property_product_pricelist
 msgid "Pricelist"
 msgstr "Lista de Precios"
+
+#. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__purchase_order_count
+msgid "Purchase Order Count"
+msgstr "Cuenta de los Pedidos de Compra"
+
+#. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__purchase_warn
+msgid "Purchase Order Warning"
+msgstr ""
+
+#. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__receipt_reminder_email
+msgid "Receipt Reminder"
+msgstr "Recordatorio de Recepción"
 
 #. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__ref
@@ -870,6 +895,7 @@ msgstr "Vendedor"
 
 #. module: brand
 #: model:ir.model.fields,help:brand.field_res_brand__invoice_warn
+#: model:ir.model.fields,help:brand.field_res_brand__purchase_warn
 #: model:ir.model.fields,help:brand.field_res_brand__sale_warn
 msgid ""
 "Selecting the \"Warning\" option will notify user with the message, "
@@ -971,6 +997,11 @@ msgid "Street2"
 msgstr "Calle2"
 
 #. module: brand
+#: model:ir.model.fields,field_description:brand.field_res_brand__property_purchase_currency_id
+msgid "Supplier Currency"
+msgstr "Moneda del Proveedor"
+
+#. module: brand
 #: model:ir.model.fields,field_description:brand.field_res_brand__supplier_rank
 msgid "Supplier Rank"
 msgstr "Rango de Proveedor"
@@ -1055,6 +1086,15 @@ msgstr ""
 "cobrar del socio actual"
 
 #. module: brand
+#: model:ir.model.fields,help:brand.field_res_brand__property_purchase_currency_id
+msgid ""
+"This currency will be used, instead of the default one, for purchases from "
+"the current partner"
+msgstr ""
+"Esta moneda será usada, en lugar de la predeterminada, para compras desde el "
+"contacto actual"
+
+#. module: brand
 #: model:ir.model.fields,help:brand.field_res_brand__email_normalized
 msgid ""
 "This field is used to search on email address as the primary email field can "
@@ -1137,15 +1177,6 @@ msgid "Type of the exception activity on record."
 msgstr "Tipo de actividad de excepción registrada."
 
 #. module: brand
-#: model:ir.model.fields,help:brand.field_res_brand__peppol_endpoint
-msgid ""
-"Unique identifier used by the BIS Billing 3.0 and its derivatives, also "
-"known as 'Endpoint ID'."
-msgstr ""
-"Identificador único utilizado por Facturación BIS 3.0 y sus derivados, "
-"también conocido como 'Endpoint ID'."
-
-#. module: brand
 #: model:ir.model.fields,help:brand.field_res_brand__barcode
 msgid "Use a barcode to identify this contact."
 msgstr "Usar un código de barras para identificar a este contacto."
@@ -1224,6 +1255,33 @@ msgstr "ej. BE0477472701"
 #: model_terms:ir.ui.view,arch_db:brand.res_brand_form_view
 msgid "e.g. https://www.odoo.com"
 msgstr "ej. https://www.odoo.com"
+
+#~ msgid ""
+#~ "Code used to identify the Endpoint for BIS Billing 3.0 and its "
+#~ "derivatives.\n"
+#~ "             List available at https://docs.peppol.eu/poacc/billing/3.0/"
+#~ "codelist/eas/"
+#~ msgstr ""
+#~ "Código utilizado para identificar el Endpoint para Facturación BIS 3.0 y "
+#~ "sus derivados.\n"
+#~ "             Lista disponible en https://docs.peppol.eu/poacc/billing/3.0/"
+#~ "codelist/eas/"
+
+#~ msgid "Format"
+#~ msgstr "Formato"
+
+#~ msgid "Peppol Endpoint"
+#~ msgstr "Endpoint de Peppol"
+
+#~ msgid "Peppol e-address (EAS)"
+#~ msgstr "Dirección Electrónica Peppol (EAS)"
+
+#~ msgid ""
+#~ "Unique identifier used by the BIS Billing 3.0 and its derivatives, also "
+#~ "known as 'Endpoint ID'."
+#~ msgstr ""
+#~ "Identificador único utilizado por Facturación BIS 3.0 y sus derivados, "
+#~ "también conocido como 'Endpoint ID'."
 
 #~ msgid "Additional info"
 #~ msgstr "Información adicional"
@@ -1320,19 +1378,8 @@ msgstr "ej. https://www.odoo.com"
 #~ "aria-label=\"Los valores configurados acá serán específicos de la "
 #~ "compañía.\" groups=\"base.group_multi_company\" role=\"img\"/>"
 
-#~ msgid ""
-#~ "Automatically send a confirmation email to the vendor X days before the "
-#~ "expected receipt date, asking him to confirm the exact date."
-#~ msgstr ""
-#~ "Envía automáticamente un correo electrónico de confirmación al proveedor "
-#~ "X días antes de la fecha prevista de recepción, pidiéndole que confirme "
-#~ "la fecha exacta."
-
 #~ msgid "Customer Location"
 #~ msgstr "Ubicación del Cliente"
-
-#~ msgid "Days Before Receipt"
-#~ msgstr "Días Antes de la Recepción"
 
 #~ msgid "Last Modified on"
 #~ msgstr "Última modificación el"
@@ -1340,17 +1387,8 @@ msgstr "ej. https://www.odoo.com"
 #~ msgid "Main Attachment"
 #~ msgstr "Adjunto Principal"
 
-#~ msgid "Message for Purchase Order"
-#~ msgstr "Mensaje para el Pedido de Compra"
-
 #~ msgid "Message for Stock Picking"
 #~ msgstr "Mensaje para Movimientos de Inventario"
-
-#~ msgid ""
-#~ "Number of days to send reminder email before the promised receipt date"
-#~ msgstr ""
-#~ "Número de días para enviar un correo electrónico de recordatorio antes de "
-#~ "la fecha de recepción prometida"
 
 #~ msgid "On-Time Delivery Rate"
 #~ msgstr "Tasa de Entrega a Tiempo"
@@ -1370,17 +1408,8 @@ msgstr "ej. https://www.odoo.com"
 #~ msgid "Purchase Order"
 #~ msgstr "Pedido de Compra"
 
-#~ msgid "Purchase Order Count"
-#~ msgstr "Cuenta de los Pedidos de Compra"
-
-#~ msgid "Receipt Reminder"
-#~ msgstr "Recordatorio de Recepción"
-
 #~ msgid "Stock Picking"
 #~ msgstr "Movimiento de Inventario"
-
-#~ msgid "Supplier Currency"
-#~ msgstr "Moneda del Proveedor"
 
 #~ msgid ""
 #~ "The stock location used as destination when sending goods to this contact."
@@ -1393,13 +1422,6 @@ msgstr "ej. https://www.odoo.com"
 #~ msgstr ""
 #~ "La ubicación de stock usada como origen al recibir bienes de este "
 #~ "contacto."
-
-#~ msgid ""
-#~ "This currency will be used, instead of the default one, for purchases "
-#~ "from the current partner"
-#~ msgstr ""
-#~ "Esta moneda será usada, en lugar de la predeterminada, para compras desde "
-#~ "el contacto actual"
 
 #~ msgid "Vendor Location"
 #~ msgstr "Ubicación del Proveedor"
